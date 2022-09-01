@@ -12,7 +12,7 @@ import io.swagger.annotations.ApiOperation;
 public class WelcomeRestController {
 
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
-	@GetMapping("/welcome/{name}")
+	@GetMapping("/welcome/{Bookzy}")
 	public String welcome(@PathVariable("name") String name) {
 		return name+", Welcome to Bookzy Online book surfing site..!!";
 	}
